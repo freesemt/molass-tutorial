@@ -6,8 +6,10 @@ Molass Library, as its name suggests, is a library style rewrite of [MOLASS](htt
 
 This is a tutorial of the Molass Library. The readers should follow the order shown in the left sidebar.
 
-For the design of the library, refer to [Molass Library](https://freesemt.github.io/molass-library/).
+For the design philosophy of the library, see [Molass Library Design](https://freesemt.github.io/molass-design/).
 
 For detailed description of each fucntion, check out [Molass Library Reference](https://freesemt.github.io/molass-reference/).
 
-The source code of this document can be found at [the GitHub repository](https://github.com/freesemt/molass-tutorial).
+The source code of this library can be found at [the library repository](https://github.com/freesemt/molass-library).
+
+The source code of this document can be found at [the tutorial repository](https://github.com/freesemt/molass-tutorial).
