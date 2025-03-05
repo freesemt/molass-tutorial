@@ -11,5 +11,3 @@ For the design philosophy of the library, see [Molass Library Design](https://fr
 For detailed description of each fucntion, check out [Molass Library Reference](https://freesemt.github.io/molass-reference/).
 
 The source code of this library can be found at [the library repository](https://github.com/freesemt/molass-library).
-
-The source code of this document can be found at [the tutorial repository](https://github.com/freesemt/molass-tutorial).
