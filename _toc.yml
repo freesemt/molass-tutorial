@@ -6,6 +6,8 @@ root: chapters/intro
 options:
   numbered: true
 chapters:
+- file: chapters/00/prepare
+  title: Preparation
 - file: chapters/01/data_objects
   title: Data Objects
 - file: chapters/02/data_trimming
