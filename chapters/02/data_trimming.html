@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. 1.2 Data Trimming &#8212; Molass Library Tutorial</title>
+    <title>2. Data Trimming &#8212; Molass Library Tutorial</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02/data_trimming';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. 1.3 Baselines" href="../03/baselines.html" />
-    <link rel="prev" title="1. 1.1 Data Objects" href="../01/data_objects.html" />
+    <link rel="next" title="3. Baselines" href="../03/baselines.html" />
+    <link rel="prev" title="1. Data Objects" href="../01/data_objects.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -369,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1.2 Data Trimming</h1>
+    <h1>Data Trimming</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,14 +380,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-points">2.1. Study Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-elution-axis">2.2. 1.2.1 Trimming in Elution Axis</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-moment">2.2.1. 1.2.1.1 Trimming by Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-flow-change">2.2.2. 1.2.1.2 Trimming by Flow Change</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-elution-axis">2.2. Trimming in Elution Axis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-moment">2.2.1. Trimming by Moment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-flow-change">2.2.2. Trimming by Flow Change</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-spectral-axis">2.3. 1.2.2 Trimming in Spectral Axis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-utility">2.4. 1.2.3 Trimming Utility</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimmed-copy">2.5. 1.2.4 Trimmed Copy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-spectral-axis">2.3. Trimming in Spectral Axis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-utility">2.4. Trimming Utility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimmed-copy">2.5. Trimmed Copy</a></li>
 </ul>
             </nav>
         </div>
@@ -410,7 +410,7 @@ document.write(`
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="data-trimming">
-<h1><span class="section-number">2. </span>1.2 Data Trimming<a class="headerlink" href="#data-trimming" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">2. </span>Data Trimming<a class="headerlink" href="#data-trimming" title="Link to this heading">#</a></h1>
 <section id="study-points">
 <h2><span class="section-number">2.1. </span>Study Points<a class="headerlink" href="#study-points" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -435,9 +435,9 @@ document.write(`
 </div>
 </section>
 <section id="trimming-in-elution-axis">
-<h2><span class="section-number">2.2. </span>1.2.1 Trimming in Elution Axis<a class="headerlink" href="#trimming-in-elution-axis" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.2. </span>Trimming in Elution Axis<a class="headerlink" href="#trimming-in-elution-axis" title="Link to this heading">#</a></h2>
 <section id="trimming-by-moment">
-<h3><span class="section-number">2.2.1. </span>1.2.1.1 Trimming by Moment<a class="headerlink" href="#trimming-by-moment" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.2.1. </span>Trimming by Moment<a class="headerlink" href="#trimming-by-moment" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.Stats</span> <span class="kn">import</span> <span class="n">Moment</span>
@@ -477,7 +477,7 @@ document.write(`
 </div>
 </section>
 <section id="trimming-by-flow-change">
-<h3><span class="section-number">2.2.2. </span>1.2.1.2 Trimming by Flow Change<a class="headerlink" href="#trimming-by-flow-change" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.2.2. </span>Trimming by Flow Change<a class="headerlink" href="#trimming-by-flow-change" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>used only for data measured with flow rate changes</p></li>
 </ul>
@@ -523,7 +523,7 @@ document.write(`
 </section>
 </section>
 <section id="trimming-in-spectral-axis">
-<h2><span class="section-number">2.3. </span>1.2.2 Trimming in Spectral Axis<a class="headerlink" href="#trimming-in-spectral-axis" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>Trimming in Spectral Axis<a class="headerlink" href="#trimming-in-spectral-axis" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ssd from sample_data</span>
@@ -558,7 +558,7 @@ document.write(`
 </div>
 </section>
 <section id="trimming-utility">
-<h2><span class="section-number">2.4. </span>1.2.3 Trimming Utility<a class="headerlink" href="#trimming-utility" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.4. </span>Trimming Utility<a class="headerlink" href="#trimming-utility" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
@@ -569,8 +569,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;MolassLib.PlotUtils.PlotResult.PlotResult at 0x25c21699370&gt;,
- &lt;MolassLib.Trimming.TrimmingInfo.TrimmingInfo at 0x25c1fb69790&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;MolassLib.PlotUtils.PlotResult.PlotResult at 0x1f752f66720&gt;,
+ &lt;MolassLib.Trimming.TrimmingInfo.TrimmingInfo at 0x1f7525710d0&gt;)
 </pre></div>
 </div>
 <img alt="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" src="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" />
@@ -578,7 +578,7 @@ document.write(`
 </div>
 </section>
 <section id="trimmed-copy">
-<h2><span class="section-number">2.5. </span>1.2.4 Trimmed Copy<a class="headerlink" href="#trimmed-copy" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.5. </span>Trimmed Copy<a class="headerlink" href="#trimmed-copy" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>making deep copies</p></li>
 </ul>
@@ -635,7 +635,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>1.1 Data Objects</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Data Objects</p>
       </div>
     </a>
     <a class="right-next"
@@ -643,7 +643,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>1.3 Baselines</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Baselines</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -664,14 +664,14 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-points">2.1. Study Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-elution-axis">2.2. 1.2.1 Trimming in Elution Axis</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-moment">2.2.1. 1.2.1.1 Trimming by Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-flow-change">2.2.2. 1.2.1.2 Trimming by Flow Change</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-elution-axis">2.2. Trimming in Elution Axis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-moment">2.2.1. Trimming by Moment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-by-flow-change">2.2.2. Trimming by Flow Change</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-spectral-axis">2.3. 1.2.2 Trimming in Spectral Axis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-utility">2.4. 1.2.3 Trimming Utility</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimmed-copy">2.5. 1.2.4 Trimmed Copy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-in-spectral-axis">2.3. Trimming in Spectral Axis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimming-utility">2.4. Trimming Utility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trimmed-copy">2.5. Trimmed Copy</a></li>
 </ul>
   </nav></div>
 
