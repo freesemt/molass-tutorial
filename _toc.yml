@@ -3,6 +3,9 @@
 
 format: jb-book
 root: chapters/intro
+title: Introduction
+options:
+  numbered: true
 chapters:
 - file: chapters/01/data_objects
   title: Data Objects
