@@ -6,7 +6,7 @@ Molass Library, as its name suggests, is a library style rewrite of [MOLASS](htt
 
 This tutorial gets you started with how to use the Molass Library. Follow the chapters in the left sidebar.
 
-For the design philosophy of the library, see [Molass Library Design](https://freesemt.github.io/molass-design/).
+For the theoretical explanation of the library, see [Molass Library Theory](https://freesemt.github.io/molass-theory/).
 
 For detailed description of each fucntion, check out [Molass Library Reference](https://freesemt.github.io/molass-reference/).
 
