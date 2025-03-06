@@ -12,4 +12,4 @@ For detailed description of each fucntion, check out [Molass Library Reference](
 
 The source code of this library can be found at [the library repository](https://github.com/freesemt/molass-library).
 
-This book is powered by [JupyterBook](https://jupyterbook.org).
+This book is powered by [Jupyter Book](https://jupyterbook.org).
