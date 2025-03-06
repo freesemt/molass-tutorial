@@ -5,6 +5,7 @@ title: Molass Library Tutorial
 author: The Molass Community
 copyright: "2025"
 logo: molass.png
+exclude_patterns: ["README.md"]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
