@@ -13,3 +13,5 @@ For detailed description of each fucntion, check out [Molass Library Reference](
 The python code of the library can be found at [the library repository](https://github.com/freesemt/molass-library).
 
 This book is powered by [Jupyter Book](https://jupyterbook.org).
+
+**Tip:** You can switch between dark and light modes using the toggle button at the upper right corner of the page.
