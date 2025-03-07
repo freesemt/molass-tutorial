@@ -14,4 +14,4 @@ The python code of the library can be found at [the library repository](https://
 
 This book is powered by [Jupyter Book](https://jupyterbook.org).
 
-**Tip:** You can switch between dark and light modes using the toggle button at the upper right corner of the page.
+**Tip:** You can switch between dark and light modes using the toggle button at the upper right corner of any page.
