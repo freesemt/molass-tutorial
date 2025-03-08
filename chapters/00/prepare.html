@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/00/prepare';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Data Objects" href="../01/data_objects.html" />
+    <link rel="next" title="1.4. Data Generation for Tutorials" href="generate_data.html" />
     <link rel="prev" title="Molass Library Tutorial" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,7 +180,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Preparation</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Preparation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="generate_data.html">1.4. Generate Data</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
@@ -381,6 +384,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-tool-for-jupyter-notebooks">1.2. Run Tool for Jupyter Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-tutorials">1.3. Data for Tutorials</a></li>
 </ul>
             </nav>
         </div>
@@ -396,7 +401,7 @@ document.write(`
 <h1><span class="section-number">1. </span>Preparation<a class="headerlink" href="#preparation" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2><span class="section-number">1.1. </span>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<p>We assume here that you are familiar with Jupyter Notebook and have already installed Python and
+<p>We assume here that you are familiar with <a class="reference external" href="https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook">Jupyter Notebook</a> and have already installed Python and
 relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 <p>To install the Molass Library package, you can use pip as follows.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">molass</span>
@@ -404,6 +409,25 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 </div>
 <p><font color="orange">WARNING: This command line will be available in April, 2025.</font></p>
 </section>
+<section id="run-tool-for-jupyter-notebooks">
+<h2><span class="section-number">1.2. </span>Run Tool for Jupyter Notebooks<a class="headerlink" href="#run-tool-for-jupyter-notebooks" title="Link to this heading">#</a></h2>
+<p>For running Jupyter Notebooks, we recommend either of the following without excluding alternatives.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyter.org/">Jupyter Lab</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Jupyter Extension in VS Code</a></p></li>
+</ul>
+</section>
+<section id="data-for-tutorials">
+<h2><span class="section-number">1.3. </span>Data for Tutorials<a class="headerlink" href="#data-for-tutorials" title="Link to this heading">#</a></h2>
+<p>To run the tutorials, you need data, which can be prepared either by</p>
+<ul class="simple">
+<li><p>running <a class="reference internal" href="generate_data.html"><span class="std std-doc">the data generation book</span></a>,</p></li>
+<li><p>or downloading <a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">the zip file</span></a>.</p></li>
+</ul>
+<p>The former uses simple, but not necessarily realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. Be aware that you should have installed required packagas before running the book.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -446,11 +470,11 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../01/data_objects.html"
+       href="generate_data.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Data Objects</p>
+        <p class="prev-next-title"><span class="section-number">1.4. </span>Data Generation for Tutorials</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -471,6 +495,8 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-tool-for-jupyter-notebooks">1.2. Run Tool for Jupyter Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-tutorials">1.3. Data for Tutorials</a></li>
 </ul>
   </nav></div>
 
