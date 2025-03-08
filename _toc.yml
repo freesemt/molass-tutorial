@@ -8,6 +8,9 @@ options:
 chapters:
 - file: chapters/00/prepare
   title: Preparation
+  sections:
+    - file: chapters/00/generate_data
+      title: Generate Data
 - file: chapters/01/data_objects
   title: Data Objects
 - file: chapters/02/data_trimming
