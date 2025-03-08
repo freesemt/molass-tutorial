@@ -26,4 +26,4 @@ To run the tutorials, you need data, which can be prepared if you either
 * download and run [the data generation book](generate_data.ipynb),
 * or simply download [the zip file](../../data/sample_data.zip).
 
-You can use one or both of these. However, they are not the same. The former uses simple, but not necessarily realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. If you choose the former, you can download the notebook by the button at the upper right corner in the opened page.
+You can use one or both of these. However, they are not the same. The former uses simple, but not realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. If you choose the former, you can download the notebook by the button at the upper right corner in the opened page.
