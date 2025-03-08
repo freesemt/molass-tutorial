@@ -21,9 +21,9 @@ For running Jupyter Notebooks, we recommend either of the following without excl
 
 ## Data for Tutorials
 
-To run the tutorials, you need data, which can be prepared either by
+To run the tutorials, you need data, which can be prepared if you either
 
-* running [the data generation book](generate_data.ipynb),
-* or downloading [the zip file](../../data/sample_data.zip).
+* download and run [the data generation book](generate_data.ipynb),
+* or simply download [the zip file](../../data/sample_data.zip).
 
-The former uses simple, but not necessarily realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. Be aware that you should have installed required packagas before running the book.
+The former uses simple, but not necessarily realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. If you choose the former, you can download the notebook by the button at the upper right corner in the opened page.
