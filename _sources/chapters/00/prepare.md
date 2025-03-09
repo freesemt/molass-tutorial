@@ -31,4 +31,4 @@ To run and follow the tutorial, download data from the following links.
 * [real experiment data](../../data/sample_data.zip),
 * [modeled data similating the above](../../data/sample_data.zip).
 
-You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Data Sets](about_data_sets) if you are interested in how they are built. 
+You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Example Data Sets](about_example_data_sets) if you are interested in how they are built. 
