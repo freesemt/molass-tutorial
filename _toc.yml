@@ -8,9 +8,6 @@ options:
 chapters:
 - file: chapters/00/prepare
   title: Preparation
-  sections:
-    - file: chapters/00/generate_data
-      title: Generate Data
 - file: chapters/01/data_objects
   title: Data Objects
 - file: chapters/02/data_trimming
@@ -19,3 +16,9 @@ chapters:
   title: Baselines
 - file: chapters/04/data_correction
   title: Data Correction
+- file: chapters/80/about_data_sets
+  sections:
+  - file: chapters/80/trimming
+    title: Trimming
+  - file: chapters/80/generation
+    title: Generation

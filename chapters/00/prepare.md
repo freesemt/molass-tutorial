@@ -4,6 +4,10 @@
 We assume here that you are familiar with [Jupyter Notebook](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook) and have already installed Python and 
 relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.
 
+```{note}
+Do not confuse "Jupyter Notebook" and "Jupyter Book". The former is a file for programming, while the latter is a tool for publishing.
+```
+
 To install the Molass Library package, you can use pip as follows.
 
 ```
@@ -14,16 +18,17 @@ pip install -U molass
 
 ## Tools for Jupyter Notebooks
 
-For running Jupyter Notebooks, we recommend either of the following without excluding other alternatives.
+As tools for running Jupyter Notebooks, we recommend either of the following without excluding other alternatives.
 
 * [Jupyter Lab](https://jupyter.org/)
 * [Jupyter Extension in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
-## Data for Tutorials
+(download_data_for_this_tutorial)=
+## Download Data for this Tutorial
 
-To run the tutorials, you need data, which can be prepared if you either
+To run and follow the tutorial, download data from the following links.
 
-* download and run [the data generation book](generate_data.ipynb),
-* or simply download [the zip file](../../data/sample_data.zip).
+* [real experiment data](../../data/sample_data.zip),
+* [modeled data similating the above](../../data/sample_data.zip).
 
-You can use one or both of these. However, they are not the same. The former uses simple, but not realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. If you choose the former, you can download the notebook by the button at the upper right corner in the opened page.
+You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Data Sets](about_data_sets) if you are interested in how they are built. 
