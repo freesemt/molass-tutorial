@@ -1,7 +1,7 @@
 (about_data_sets)=
 # About Data Sets
 
-This chapter explains how the data sets for this tutorial, which are referenced in [Download Data for This Tutorial](download_data_for_this_tutorial), have been built.
+This chapter explains how the data sets for this tutorial have been built. They are those referenced in [Download Data for This Tutorial](download_data_for_this_tutorial).
 
 In the next two sections, the followng two data sets will be described.
   * real experiment data
