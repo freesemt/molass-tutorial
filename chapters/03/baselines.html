@@ -180,14 +180,16 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../00/prepare.html">1. Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../00/generate_data.html">1.4. Generate Data</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../00/prepare.html">1. Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Baselines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/data_correction.html">5. Data Correction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../80/modeled_data.html">6. Modeled Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Original Data Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Modeled Data Generation</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -398,7 +400,7 @@ document.write(`
   <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\pytools-3_3_8-develop\lib&quot;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
@@ -413,25 +415,16 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
-<span class="kn">from</span> <span class="nn">MolassLib.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
+<span class="kn">from</span> <span class="nn">molass.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
 <span class="n">set_molass_options</span><span class="p">(</span><span class="n">flowchange</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;D:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
+<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
 <span class="n">ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">MolassLib.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">MolassLib.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">set_molass_options</span><span class="p">(</span><span class="n">flowchange</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;MolassLib&#39;
-</pre></div>
-</div>
+<img alt="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" src="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" />
 </div>
 </div>
 <div class="cell docutils container">

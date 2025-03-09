@@ -180,14 +180,16 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../00/prepare.html">1. Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../00/generate_data.html">1.4. Generate Data</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../00/prepare.html">1. Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/data_correction.html">5. Data Correction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../80/modeled_data.html">6. Modeled Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Original Data Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Modeled Data Generation</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -406,7 +408,7 @@ document.write(`
   <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\pytools-3_3_8-develop\lib&quot;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
@@ -427,23 +429,14 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
-<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;D:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
+<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
 <span class="n">ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">MolassLib.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;D:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">();</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;MolassLib&#39;
-</pre></div>
-</div>
+<img alt="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" src="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" />
 </div>
 </div>
 </section>
@@ -453,7 +446,7 @@ document.write(`
 <h3><span class="section-number">3.2.1. </span>Trimming by Moment<a class="headerlink" href="#trimming-by-moment" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.Stats</span> <span class="kn">import</span> <span class="n">Moment</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Stats</span> <span class="kn">import</span> <span class="n">Moment</span>
 <span class="n">xr_icurve</span> <span class="o">=</span> <span class="n">ssd</span><span class="o">.</span><span class="n">xr</span><span class="o">.</span><span class="n">get_icurve</span><span class="p">()</span>
 <span class="n">uv_icurve</span> <span class="o">=</span> <span class="n">ssd</span><span class="o">.</span><span class="n">uv</span><span class="o">.</span><span class="n">get_icurve</span><span class="p">()</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">xr_icurve</span><span class="o">.</span><span class="n">x</span>
@@ -524,13 +517,13 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span><span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-<span class="n">plot_flowchange_trimming</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
-<span class="n">plot_flowchange_trimming</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\Data\20161104\BL-6A\AhRR&quot;</span><span class="p">)</span>
+<span class="n">plot_flowchange_trimming</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
+<span class="n">plot_flowchange_trimming</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\20161104\BL-6A\AhRR&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/e7f66a427db74519021bc1dcf196cfd3b8263f70bcd31af9e01d29083cc0bc02.png" src="../../_images/e7f66a427db74519021bc1dcf196cfd3b8263f70bcd31af9e01d29083cc0bc02.png" />
+<img alt="../../_images/e6bb1f8b3543824b08a6425f6b8b775f3ce06d8939af93dec1ec95886b0bfde9.png" src="../../_images/e6bb1f8b3543824b08a6425f6b8b775f3ce06d8939af93dec1ec95886b0bfde9.png" />
 </div>
 </div>
 </section>
@@ -574,7 +567,7 @@ document.write(`
 <h2><span class="section-number">3.4. </span>Trimming Utility<a class="headerlink" href="#trimming-utility" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MolassLib.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
 <span class="n">set_molass_options</span><span class="p">(</span><span class="n">flowchange</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">tinfo</span> <span class="o">=</span> <span class="n">ssd</span><span class="o">.</span><span class="n">make_trimming_info</span><span class="p">()</span>
 <span class="n">ssd</span><span class="o">.</span><span class="n">plot_trimming_info</span><span class="p">(</span><span class="n">tinfo</span><span class="p">)</span>
@@ -582,8 +575,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;MolassLib.PlotUtils.PlotResult.PlotResult at 0x2037c4745f0&gt;,
- &lt;MolassLib.Trimming.TrimmingInfo.TrimmingInfo at 0x2037a9e5040&gt;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;molass.PlotUtils.PlotResult.PlotResult at 0x24e263a5a30&gt;,
+ &lt;molass.Trimming.TrimmingInfo.TrimmingInfo at 0x24e24bbe6f0&gt;)
 </pre></div>
 </div>
 <img alt="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" src="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" />

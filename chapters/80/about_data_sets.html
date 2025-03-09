@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5. Data Correction &#8212; Molass Library Tutorial</title>
+    <title>6. About Data Sets &#8212; Molass Library Tutorial</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,11 +57,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/04/data_correction';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/80/about_data_sets';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6. Modeled Data" href="../80/modeled_data.html" />
-    <link rel="prev" title="4. Baselines" href="../03/baselines.html" />
+    <link rel="next" title="6.1. Trimming" href="trimming.html" />
+    <link rel="prev" title="5. Data Correction" href="../04/data_correction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -184,10 +184,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Data Correction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../80/modeled_data.html">6. Modeled Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Original Data Trimming</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Modeled Data Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/data_correction.html">5. Data Correction</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">6. About Data Sets</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="trimming.html">6.1. Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generation.html">6.2. Generation</a></li>
 </ul>
 </details></li>
 </ul>
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/freesemt/molass-tutorial/issues/new?title=Issue%20on%20page%20%2Fchapters/04/data_correction.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/freesemt/molass-tutorial/issues/new?title=Issue%20on%20page%20%2Fchapters/80/about_data_sets.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +291,7 @@
       
       
       
-      <li><a href="../../_sources/chapters/04/data_correction.ipynb" target="_blank"
+      <li><a href="../../_sources/chapters/80/about_data_sets.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -301,7 +301,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -362,9 +362,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -375,19 +373,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data Correction</h1>
+    <h1>About Data Sets</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-points">5.1. Study Points</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -397,68 +387,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">molass.Global.Options</span> <span class="kn">import</span> <span class="n">set_molass_options</span>
-<span class="n">set_molass_options</span><span class="p">(</span><span class="n">flowchange</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section class="tex2jax_ignore mathjax_ignore" id="data-correction">
-<h1><span class="section-number">5. </span>Data Correction<a class="headerlink" href="#data-correction" title="Link to this heading">#</a></h1>
-<section id="study-points">
-<h2><span class="section-number">5.1. </span>Study Points<a class="headerlink" href="#study-points" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="about-data-sets">
+<span id="id1"></span><h1><span class="section-number">6. </span>About Data Sets<a class="headerlink" href="#about-data-sets" title="Link to this heading">#</a></h1>
+<p>This chapter explains how the data sets for this tutorial, which are referenced in <a class="reference internal" href="../00/prepare.html#download-data-for-this-tutorial"><span class="std std-ref">Download Data for This Tutorial</span></a>, have been built.</p>
+<p>In the next two sections, the followng two data sets will be described.</p>
 <ul class="simple">
-<li><p>ssd.corrected_copy()</p></li>
+<li><p>real experiment data</p></li>
+<li><p>modeled data simulating the above</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
-<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
-<span class="n">ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">();</span>
-</pre></div>
+<p>To fully understand this chapter, you should be familiar with the following concepts as well as programming basics in Python, which is one of the reasons why we place this chapter later in this tutorial.</p>
+<ul class="simple">
+<li><p>trimming</p></li>
+<li><p>curve modeling</p></li>
+<li><p>matrix manipulation</p></li>
+</ul>
+<div class="toctree-wrapper compound">
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" src="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ssd</span><span class="o">.</span><span class="n">plot_trimming_info</span><span class="p">();</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" src="../../_images/efd95bee8b6460e7462364da6393924c9e19224b0a7d2700f8badff901a5ef55.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trimmed_ssd</span> <span class="o">=</span> <span class="n">ssd</span><span class="o">.</span><span class="n">trimmed_copy</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trimmed_ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x2282fd49040&gt;
-</pre></div>
-</div>
-<img alt="../../_images/6fd4d8149ba6580a6118eff642c70606f661054328a9a9c83b6a74fdc2a2290b.png" src="../../_images/6fd4d8149ba6580a6118eff642c70606f661054328a9a9c83b6a74fdc2a2290b.png" />
-</div>
-</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -474,7 +418,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapters\04"
+            path: "./chapters\80"
         },
         predefinedOutput: true
     }
@@ -492,20 +436,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../03/baselines.html"
+       href="../04/data_correction.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Baselines</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Data Correction</p>
       </div>
     </a>
     <a class="right-next"
-       href="../80/modeled_data.html"
+       href="trimming.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Modeled Data</p>
+        <p class="prev-next-title"><span class="section-number">6.1. </span>Trimming</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -515,21 +459,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-points">5.1. Study Points</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

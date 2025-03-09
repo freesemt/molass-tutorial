@@ -18,18 +18,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from MolassLib.DataObjects import SecSaxsData as SSD
-ssd = SSD(r"D:\PyTools\Data\sample_data")
-ssd.plot_3d();
+from molass.Global.Options import set_molass_options
+from molass.DataObjects import SecSaxsData as SSD
+set_molass_options(flowchange=True)
+ssd0 = SSD(r"E:\PyTools\Data\sample_data")
+ssd0.plot_3d()
+ssd0.plot_trimming_info();
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
 [1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
 Cell [1;32mIn[2], line 1[0m
-[1;32m----> 1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mMolassLib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mDataObjects[39;00m [38;5;28;01mimport[39;00m SecSaxsData [38;5;28;01mas[39;00m SSD
-[0;32m      2[0m ssd [38;5;241m=[39m SSD([38;5;124mr[39m[38;5;124m"[39m[38;5;124mD:[39m[38;5;124m\[39m[38;5;124mPyTools[39m[38;5;124m\[39m[38;5;124mData[39m[38;5;124m\[39m[38;5;124msample_data[39m[38;5;124m"[39m)
-[0;32m      3[0m ssd[38;5;241m.[39mplot_3d();
+[1;32m----> 1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmolass[39;00m[38;5;21;01m.[39;00m[38;5;21;01mGlobal[39;00m[38;5;21;01m.[39;00m[38;5;21;01mOptions[39;00m [38;5;28;01mimport[39;00m set_molass_options
+[0;32m      2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmolass[39;00m[38;5;21;01m.[39;00m[38;5;21;01mDataObjects[39;00m [38;5;28;01mimport[39;00m SecSaxsData [38;5;28;01mas[39;00m SSD
+[0;32m      3[0m set_molass_options(flowchange[38;5;241m=[39m[38;5;28;01mTrue[39;00m)
 
-[1;31mModuleNotFoundError[0m: No module named 'MolassLib'
+[1;31mModuleNotFoundError[0m: No module named 'molass'
 

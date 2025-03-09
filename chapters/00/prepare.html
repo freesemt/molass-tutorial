@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/00/prepare';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.4. Data Generation for Tutorials" href="generate_data.html" />
+    <link rel="next" title="2. Data Objects" href="../01/data_objects.html" />
     <link rel="prev" title="Molass Library Tutorial" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,14 +180,16 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Preparation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="generate_data.html">1.4. Generate Data</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/data_correction.html">5. Data Correction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../80/about_data_sets.html">6. About Data Sets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Generation</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -385,7 +387,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-tutorials">1.3. Data for Tutorials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
 </ul>
             </nav>
         </div>
@@ -403,6 +405,10 @@ document.write(`
 <h2><span class="section-number">1.1. </span>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
 <p>We assume here that you are familiar with <a class="reference external" href="https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook">Jupyter Notebook</a> and have already installed Python and
 relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not confuse “Jupyter Notebook” and “Jupyter Book”. The former is a file for programming, while the latter is a tool for publishing.</p>
+</div>
 <p>To install the Molass Library package, you can use pip as follows.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">molass</span>
 </pre></div>
@@ -411,23 +417,21 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 </section>
 <section id="tools-for-jupyter-notebooks">
 <h2><span class="section-number">1.2. </span>Tools for Jupyter Notebooks<a class="headerlink" href="#tools-for-jupyter-notebooks" title="Link to this heading">#</a></h2>
-<p>For running Jupyter Notebooks, we recommend either of the following without excluding other alternatives.</p>
+<p>As tools for running Jupyter Notebooks, we recommend either of the following without excluding other alternatives.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jupyter.org/">Jupyter Lab</a></p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Jupyter Extension in VS Code</a></p></li>
 </ul>
 </section>
-<section id="data-for-tutorials">
-<h2><span class="section-number">1.3. </span>Data for Tutorials<a class="headerlink" href="#data-for-tutorials" title="Link to this heading">#</a></h2>
-<p>To run the tutorials, you need data, which can be prepared if you either</p>
+<section id="download-data-for-this-tutorial">
+<span id="id1"></span><h2><span class="section-number">1.3. </span>Download Data for this Tutorial<a class="headerlink" href="#download-data-for-this-tutorial" title="Link to this heading">#</a></h2>
+<p>To run and follow the tutorial, download data from the following links.</p>
 <ul class="simple">
-<li><p>download and run <a class="reference internal" href="generate_data.html"><span class="std std-doc">the data generation book</span></a>,</p></li>
-<li><p>or simply download <a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">the zip file</span></a>.</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">real experiment data</span></a>,</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">modeled data similating the above</span></a>.</p></li>
 </ul>
-<p>You can use one or both of these. However, they are not the same. The former uses simple, but not realistic, models to generate the data; while the latter is from a real experiment on some standard proteins. If you choose the former, you can download the notebook by the button at the upper right corner in the opened page.</p>
+<p>You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See <a class="reference internal" href="../80/about_data_sets.html#about-data-sets"><span class="std std-ref">About Data Sets</span></a> if you are interested in how they are built.</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -470,11 +474,11 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
       </div>
     </a>
     <a class="right-next"
-       href="generate_data.html"
+       href="../01/data_objects.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.4. </span>Data Generation for Tutorials</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Data Objects</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -496,7 +500,7 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-tutorials">1.3. Data for Tutorials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
 </ul>
   </nav></div>
 
