@@ -17,6 +17,7 @@ chapters:
 - file: chapters/04/data_correction
   title: Data Correction
 - file: chapters/80/about_data_sets
+  title: About Example Data Sets
   sections:
   - file: chapters/80/trimming
     title: Trimming
