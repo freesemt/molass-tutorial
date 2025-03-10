@@ -1,5 +1,8 @@
 # Ignore build artifacts
 _build/
 
-# Ignore the evironment file which defines PYTHONPATH for local execution
+# Ignore the evironment file which defines PYTHONPATH
 .env
+
+# Ignore the local settings for each user
+local_settings.py
