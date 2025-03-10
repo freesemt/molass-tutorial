@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Data Trimming" href="../02/data_trimming.html" />
-    <link rel="prev" title="1. Preparation" href="../00/prepare.html" />
+    <link rel="prev" title="1.5. Local Settings Check" href="../00/settings_check.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,7 +180,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../00/prepare.html">1. Preparation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../00/prepare.html">1. Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../00/settings_check.html">1.5. Local Settings Check</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
@@ -405,8 +408,11 @@ document.write(`
   <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;E:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
+<span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">()</span>
+<span class="n">TUTORIAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;TUTORIAL_DATA&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -430,13 +436,13 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.DataObjects</span> <span class="kn">import</span> <span class="n">SecSaxsData</span> <span class="k">as</span> <span class="n">SSD</span>
-<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;E:\PyTools\Data\sample_data&quot;</span><span class="p">)</span>
+<span class="n">ssd</span> <span class="o">=</span> <span class="n">SSD</span><span class="p">(</span><span class="n">TUTORIAL_DATA</span><span class="p">)</span>
 <span class="n">ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" src="../../_images/55284ae8fcb87ea1910370357e8f4323f6a92294dffacc739685eab961731151.png" />
+<img alt="../../_images/fa2b2bf588dbf3e91ebe931138a81a1cb1814913eb9d0c6ca1d45ffcce11d645.png" src="../../_images/fa2b2bf588dbf3e91ebe931138a81a1cb1814913eb9d0c6ca1d45ffcce11d645.png" />
 </div>
 </div>
 </section>
@@ -450,7 +456,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/d1a83d0caf15af805e746e7978b6605ed469347b411969b9ecf9d56a2d942fd3.png" src="../../_images/d1a83d0caf15af805e746e7978b6605ed469347b411969b9ecf9d56a2d942fd3.png" />
+<img alt="../../_images/353152cb0ab61b96999258f7462366348ab8f1e3079718bfb4773983cd027a17.png" src="../../_images/353152cb0ab61b96999258f7462366348ab8f1e3079718bfb4773983cd027a17.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -461,7 +467,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/24ea0eaf7fdbb4f47e7249827df8760d261b6ef22ed104c5537833814ad07d3f.png" src="../../_images/24ea0eaf7fdbb4f47e7249827df8760d261b6ef22ed104c5537833814ad07d3f.png" />
+<img alt="../../_images/05cfec25cb34f14d2370f395bcb517722a3aa125a8a0e903ff66c3d3622cb608.png" src="../../_images/05cfec25cb34f14d2370f395bcb517722a3aa125a8a0e903ff66c3d3622cb608.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -473,7 +479,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/66fdba4d9fc40edf93e3fa3d7d8993e8a0cc659b4def7022883222d338ed16ff.png" src="../../_images/66fdba4d9fc40edf93e3fa3d7d8993e8a0cc659b4def7022883222d338ed16ff.png" />
+<img alt="../../_images/bdcf28726fae7b4ac577b6a36444e1dbda46bef09f479e5a444277e73a1584e8.png" src="../../_images/bdcf28726fae7b4ac577b6a36444e1dbda46bef09f479e5a444277e73a1584e8.png" />
 </div>
 </div>
 </section>
@@ -491,7 +497,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([374, 621], [187, 310])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([239, 486], [120, 243])
 </pre></div>
 </div>
 </div>
@@ -507,7 +513,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/3e1b8ea025641c083f34fa661023a47c881b10bc20bd70cdfb02323b0ed2eb79.png" src="../../_images/3e1b8ea025641c083f34fa661023a47c881b10bc20bd70cdfb02323b0ed2eb79.png" />
+<img alt="../../_images/a4575a94ffb6ce97d20726a4d4414e9e7c38b330dc47e182335aa7b518d3228d.png" src="../../_images/a4575a94ffb6ce97d20726a4d4414e9e7c38b330dc47e182335aa7b518d3228d.png" />
 </div>
 </div>
 <ul class="simple">
@@ -598,12 +604,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../00/prepare.html"
+       href="../00/settings_check.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Preparation</p>
+        <p class="prev-next-title"><span class="section-number">1.5. </span>Local Settings Check</p>
       </div>
     </a>
     <a class="right-next"

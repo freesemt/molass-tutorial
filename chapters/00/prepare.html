@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/00/prepare';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Data Objects" href="../01/data_objects.html" />
+    <link rel="next" title="1.5. Local Settings Check" href="settings_check.html" />
     <link rel="prev" title="Molass Library Tutorial" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,7 +180,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Preparation</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Preparation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="settings_check.html">1.5. Local Settings Check</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
@@ -388,6 +391,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings">1.4. Local Settings</a></li>
 </ul>
             </nav>
         </div>
@@ -427,11 +431,24 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 <span id="id1"></span><h2><span class="section-number">1.3. </span>Download Data for this Tutorial<a class="headerlink" href="#download-data-for-this-tutorial" title="Link to this heading">#</a></h2>
 <p>To run and follow the tutorial, download data from the following links.</p>
 <ul class="simple">
-<li><p><a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">real experiment data</span></a>,</p></li>
-<li><p><a class="reference download internal" download="" href="../../_downloads/b9acfe1f1c3b6582f0212a6745ce96f7/sample_data.zip"><span class="xref download myst">modeled data similating the above</span></a>.</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/6781b482c5a653baea141251854ee598/tutorial_data.zip"><span class="xref download myst">tutorial data</span></a>,</p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/2d33d46e1518ded14ce1962f4a3dd2b5/simulated_data.zip"><span class="xref download myst">simulated data</span></a>.</p></li>
 </ul>
 <p>You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See <a class="reference internal" href="../80/about_data_sets.html#about-example-data-sets"><span class="std std-ref">About Example Data Sets</span></a> if you are interested in how they are built.</p>
 </section>
+<section id="local-settings">
+<h2><span class="section-number">1.4. </span>Local Settings<a class="headerlink" href="#local-settings" title="Link to this heading">#</a></h2>
+<p>Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named “local_settings.py” in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like ‘../../local_settings.py’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">LocalSettings</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+    <span class="n">TUTORIAL_DATA</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;D:\MolassData\tutorial_data&quot;</span><span class="p">,</span>   <span class="c1"># unzipped data folder</span>
+    <span class="n">SIMULATED_DATA</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;D:\MolassData\simulated_data&quot;</span><span class="p">,</span> <span class="c1"># unzipped data folder, optional</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>You can check your local settings in the next section.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -474,11 +491,11 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../01/data_objects.html"
+       href="settings_check.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Data Objects</p>
+        <p class="prev-next-title"><span class="section-number">1.5. </span>Local Settings Check</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,6 +518,7 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.1. Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings">1.4. Local Settings</a></li>
 </ul>
   </nav></div>
 

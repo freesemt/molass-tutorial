@@ -28,7 +28,20 @@ As tools for running Jupyter Notebooks, we recommend either of the following wit
 
 To run and follow the tutorial, download data from the following links.
 
-* [real experiment data](../../data/sample_data.zip),
-* [modeled data similating the above](../../data/sample_data.zip).
+* [tutorial data](../../data/tutorial_data.zip),
+* [simulated data](../../data/simulated_data.zip).
 
-You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Example Data Sets](about_example_data_sets) if you are interested in how they are built. 
+You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Example Data Sets](about_example_data_sets) if you are interested in how they are built.
+
+## Local Settings
+
+Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named "local_settings.py" in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like '../../local_settings.py'.
+
+```python
+LocalSettings = dict(
+    TUTORIAL_DATA=r"D:\MolassData\tutorial_data",   # unzipped data folder
+    SIMULATED_DATA=r"D:\MolassData\simulated_data", # unzipped data folder, optional
+)
+```
+
+You can check your local settings in the next section.
