@@ -18,7 +18,7 @@ pip install -U molass
 
 ## Tools for Jupyter Notebooks
 
-As tools for running Jupyter Notebooks, we recommend either of the following without excluding other alternatives.
+As a tool for programming in Jupyter Notebooks, we recommend either of the following without excluding other alternatives.
 
 * [Jupyter Lab](https://jupyter.org/)
 * [Jupyter Extension in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
@@ -35,7 +35,7 @@ You can use one or both of these. They are similar, but not the same. The former
 
 ## Local Settings
 
-Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named "local_settings.py" in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like '../../local_settings.py'.
+Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named "local_settings.py" placed in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like '../../local_settings.py'.
 
 ```python
 LocalSettings = dict(
