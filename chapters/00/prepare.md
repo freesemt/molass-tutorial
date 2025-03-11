@@ -28,8 +28,8 @@ As a tool for programming in Jupyter Notebooks, we recommend either of the follo
 
 To run and follow the tutorial, download data from the following links.
 
-* [tutorial_data.zip](../../data/tutorial_data.zip),
-* [simulated_data.zip](../../data/simulated_data.zip).
+* [tutorial_data.zip](../../data/tutorial_data.zip)
+* [simulated_data.zip](../../data/simulated_data.zip)  (in preparation)
 
 You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See [About Example Data Sets](about_example_data_sets) if you are interested in how they are built.
 
