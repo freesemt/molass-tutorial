@@ -26,3 +26,5 @@ chapters:
     title: Trimming
   - file: chapters/80/generation
     title: Generation
+- file: chapters/81/about_pre_release
+  title: About Pre-release Package
