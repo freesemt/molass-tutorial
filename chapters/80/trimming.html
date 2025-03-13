@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -193,6 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="generation.html">6.2. Generation</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../81/about_pre_release.html">7. About Pre-release Package</a></li>
 </ul>
 
     </div>
@@ -392,9 +393,7 @@ document.write(`
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;D:\PyTools\pytools-3_3_9-develop\lib&quot;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
 <span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">()</span>
 <span class="n">ORIGINAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;ORIGINAL_DATA&#39;</span><span class="p">]</span>
@@ -537,7 +536,9 @@ document.write(`
 [94] copying from D:\PyTools\Data\sample_data\SAMPLE_00094_sub.dat to SAMPLE_00027_.dat
 [95] copying from D:\PyTools\Data\sample_data\SAMPLE_00095_sub.dat to SAMPLE_00028_.dat
 [96] copying from D:\PyTools\Data\sample_data\SAMPLE_00096_sub.dat to SAMPLE_00029_.dat
-[97] copying from D:\PyTools\Data\sample_data\SAMPLE_00097_sub.dat to SAMPLE_00030_.dat
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[97] copying from D:\PyTools\Data\sample_data\SAMPLE_00097_sub.dat to SAMPLE_00030_.dat
 [98] copying from D:\PyTools\Data\sample_data\SAMPLE_00098_sub.dat to SAMPLE_00031_.dat
 [99] copying from D:\PyTools\Data\sample_data\SAMPLE_00099_sub.dat to SAMPLE_00032_.dat
 [100] copying from D:\PyTools\Data\sample_data\SAMPLE_00100_sub.dat to SAMPLE_00033_.dat
@@ -670,7 +671,9 @@ document.write(`
 [227] copying from D:\PyTools\Data\sample_data\SAMPLE_00227_sub.dat to SAMPLE_00160_.dat
 [228] copying from D:\PyTools\Data\sample_data\SAMPLE_00228_sub.dat to SAMPLE_00161_.dat
 [229] copying from D:\PyTools\Data\sample_data\SAMPLE_00229_sub.dat to SAMPLE_00162_.dat
-[230] copying from D:\PyTools\Data\sample_data\SAMPLE_00230_sub.dat to SAMPLE_00163_.dat
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[230] copying from D:\PyTools\Data\sample_data\SAMPLE_00230_sub.dat to SAMPLE_00163_.dat
 [231] copying from D:\PyTools\Data\sample_data\SAMPLE_00231_sub.dat to SAMPLE_00164_.dat
 [232] copying from D:\PyTools\Data\sample_data\SAMPLE_00232_sub.dat to SAMPLE_00165_.dat
 [233] copying from D:\PyTools\Data\sample_data\SAMPLE_00233_sub.dat to SAMPLE_00166_.dat
@@ -691,9 +694,7 @@ document.write(`
 [248] copying from D:\PyTools\Data\sample_data\SAMPLE_00248_sub.dat to SAMPLE_00181_.dat
 [249] copying from D:\PyTools\Data\sample_data\SAMPLE_00249_sub.dat to SAMPLE_00182_.dat
 [250] copying from D:\PyTools\Data\sample_data\SAMPLE_00250_sub.dat to SAMPLE_00183_.dat
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[251] copying from D:\PyTools\Data\sample_data\SAMPLE_00251_sub.dat to SAMPLE_00184_.dat
+[251] copying from D:\PyTools\Data\sample_data\SAMPLE_00251_sub.dat to SAMPLE_00184_.dat
 [252] copying from D:\PyTools\Data\sample_data\SAMPLE_00252_sub.dat to SAMPLE_00185_.dat
 [253] copying from D:\PyTools\Data\sample_data\SAMPLE_00253_sub.dat to SAMPLE_00186_.dat
 [254] copying from D:\PyTools\Data\sample_data\SAMPLE_00254_sub.dat to SAMPLE_00187_.dat
@@ -710,7 +711,9 @@ document.write(`
 [265] copying from D:\PyTools\Data\sample_data\SAMPLE_00265_sub.dat to SAMPLE_00198_.dat
 [266] copying from D:\PyTools\Data\sample_data\SAMPLE_00266_sub.dat to SAMPLE_00199_.dat
 [267] copying from D:\PyTools\Data\sample_data\SAMPLE_00267_sub.dat to SAMPLE_00200_.dat
-[268] copying from D:\PyTools\Data\sample_data\SAMPLE_00268_sub.dat to SAMPLE_00201_.dat
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[268] copying from D:\PyTools\Data\sample_data\SAMPLE_00268_sub.dat to SAMPLE_00201_.dat
 [269] copying from D:\PyTools\Data\sample_data\SAMPLE_00269_sub.dat to SAMPLE_00202_.dat
 [270] copying from D:\PyTools\Data\sample_data\SAMPLE_00270_sub.dat to SAMPLE_00203_.dat
 [271] copying from D:\PyTools\Data\sample_data\SAMPLE_00271_sub.dat to SAMPLE_00204_.dat
@@ -825,7 +828,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x1d5f3fd3680&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x177537a18e0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/6fd4d8149ba6580a6118eff642c70606f661054328a9a9c83b6a74fdc2a2290b.png" src="../../_images/6fd4d8149ba6580a6118eff642c70606f661054328a9a9c83b6a74fdc2a2290b.png" />
@@ -844,7 +847,7 @@ document.write(`
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>developper memo: remember that &quot;LowRank.CoupledAdjuster.select_components&quot; is not implemented yet.
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>D:\PyTools\pytools-3_3_9-develop\lib\molass\PlotUtils\LowRankInfoPlot.py:133: RuntimeWarning: invalid value encountered in log
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Program Files\Python312\Lib\site-packages\molass\PlotUtils\LowRankInfoPlot.py:133: RuntimeWarning: invalid value encountered in log
   logy = np.log(pv[slice_])
 </pre></div>
 </div>

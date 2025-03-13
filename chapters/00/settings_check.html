@@ -193,8 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Generation</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../81/about_pre_release.html">7. (about_pre_release)=</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="../81/about_pre_release.html">7. About Pre-release Package</a></li>
 </ul>
 
     </div>
@@ -395,13 +394,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="local-settings-check">
 <h1><span class="section-number">1.5. </span>Local Settings Check<a class="headerlink" href="#local-settings-check" title="Link to this heading">#</a></h1>
 <p>To check your local settings, download this book by the button at the upper right corner and run it.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This example uses a pre-release feature. See <a class="reference internal" href="#about_pre_release"><span class="xref myst">About Pre-release Package</span></a></p>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass_pre.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>     <span class="c1"># molass_pre will be eventually replaced to molass</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
 <span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">()</span>
 <span class="n">TUTORIAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;TUTORIAL_DATA&#39;</span><span class="p">]</span>
 <span class="n">SIMULATED_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;SIMULATED_DATA&#39;</span><span class="p">]</span>

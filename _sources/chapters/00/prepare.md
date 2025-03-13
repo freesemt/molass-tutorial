@@ -12,9 +12,14 @@ To install the Molass Library package, you can use pip as follows.
 
 ```
 pip install -U molass
+pip install -U molass_legacy
 ```
 
-<font color="orange">WARNING: This command line will be available in April, 2025.</font>
+<font color="orange">WARNING: These command lines will be available in April, 2025.</font>
+
+```{note}
+The molass package currently depends on molass_legacy. This dependency is planned to be removed soon. 
+```
 
 ## Tools for Jupyter Notebooks
 
