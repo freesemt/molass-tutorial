@@ -8,7 +8,7 @@ This tutorial gets you started with how to use the Molass Library. Follow the ch
 
 For the theoretical explanation of the library, see [Molass Library Theory](https://freesemt.github.io/molass-theory/).
 
-For detailed description of each fucntion, check out [Molass Library Reference](https://freesemt.github.io/molass-reference/).
+For detailed description of each fucntion, check out [Molass Library Reference](https://freesemt.github.io/molass-library/).
 
 The python code of the library can be found at [the library repository](https://github.com/freesemt/molass-library).
 
