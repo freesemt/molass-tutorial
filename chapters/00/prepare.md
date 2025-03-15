@@ -61,5 +61,5 @@ Save the scirpt to any upper folder, e.g, like below.
                 working-notebook.ipynb
 ```
 
-The get_local_settings() function introduced in the next section will search for this script walking upward several levels until it finds the filename and import the settings dict you have specified.
+The get_local_settings() function introduced in the next section will search for this script walking upward several levels from the current folder until it finds the filename and import the settings dict you have specified.
 You can check your local settings in the next section.
