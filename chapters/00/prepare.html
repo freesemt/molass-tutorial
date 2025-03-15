@@ -153,8 +153,8 @@
       
     
     
-    <img src="../../_static/molass.png" class="logo__image only-light" alt="Molass Library Tutorial - Home"/>
-    <script>document.write(`<img src="../../_static/molass.png" class="logo__image only-dark" alt="Molass Library Tutorial - Home"/>`);</script>
+    <img src="../../_static/molamola.png" class="logo__image only-light" alt="Molass Library Tutorial - Home"/>
+    <script>document.write(`<img src="../../_static/molamola.png" class="logo__image only-dark" alt="Molass Library Tutorial - Home"/>`);</script>
   
   
 </a></div>
@@ -444,14 +444,25 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 </section>
 <section id="local-settings">
 <h2><span class="section-number">1.4. </span>Local Settings<a class="headerlink" href="#local-settings" title="Link to this heading">#</a></h2>
-<p>Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named “local_settings.py” placed in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like ‘../../local_settings.py’.</p>
+<p>Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named “local_settings.py” placed in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">LocalSettings</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
     <span class="n">TUTORIAL_DATA</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;D:\MolassData\tutorial_data&quot;</span><span class="p">,</span>   <span class="c1"># unzipped data folder</span>
     <span class="n">SIMULATED_DATA</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;D:\MolassData\simulated_data&quot;</span><span class="p">,</span> <span class="c1"># unzipped data folder, optional</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-<p>You can check your local settings in the next section.</p>
+<p>Save the scirpt to any upper folder, e.g, like below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">any_upper_foler</span><span class="o">/</span>
+        <span class="n">local_settings</span><span class="o">.</span><span class="n">py</span>
+        <span class="o">...</span>
+        <span class="n">parent_folder</span><span class="o">/</span>
+            <span class="o">...</span>
+            <span class="n">current_folder</span><span class="o">/</span>
+                <span class="n">working</span><span class="o">-</span><span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+<p>The get_local_settings() function introduced in the next section will search for this script walking upward several levels until it finds the filename and import the settings dict you have specified.
+You can check your local settings in the next section.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
