@@ -40,7 +40,7 @@ You can use one or both of these. They are similar, but not the same. The former
 
 ## Local Settings
 
-Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named "local_settings.py" placed in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment, and save to anywhere like '../../local_settings.py'.
+Those data sets you have downloaded will be referenced in the tutorial. You are supposed to unzip them and set the unzipped folder locations in a python script named "local_settings.py" placed in one of the upper folders relative to the notebook you run. Copy and modify the code block below to fit to your environment.
 
 ```python
 LocalSettings = dict(
@@ -49,4 +49,17 @@ LocalSettings = dict(
 )
 ```
 
+Save the scirpt to any upper folder, e.g, like below.
+
+```
+    any_upper_foler/
+        local_settings.py
+        ...
+        parent_folder/
+            ...
+            current_folder/
+                working-notebook.ipynb
+```
+
+The get_local_settings() function introduced in the next section will search for this script walking upward several levels until it finds the filename and import the settings dict you have specified.
 You can check your local settings in the next section.
