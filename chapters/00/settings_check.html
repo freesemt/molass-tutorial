@@ -397,7 +397,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
-<span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">()</span>
+<span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">TUTORIAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;TUTORIAL_DATA&#39;</span><span class="p">]</span>
 <span class="n">SIMULATED_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;SIMULATED_DATA&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">TUTORIAL_DATA</span><span class="p">)</span>
@@ -406,7 +406,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E:\MolassData\tutorial_data
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0] E:\GitHub\molass-tutorial\chapters\local_settings.py does not exist
+[1] E:\GitHub\molass-tutorial\local_settings.py does not exist
+[2] E:\GitHub\local_settings.py found
+E:\MolassData\tutorial_data
 E:\MolassData\simulated_data
 </pre></div>
 </div>

@@ -18,28 +18,44 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import numpy as np
-import matplotlib.pyplot as plt
-from molass.Local import get_local_settings
-local_settings = get_local_settings()
-TUTORIAL_DATA = local_settings['TUTORIAL_DATA']
+fig, (ax1,ax2) = plt.subplots(ncols=2, figsize=(10,4))
+plot_flowchange_trimming(ax1, TUTORIAL_DATA)
+plot_flowchange_trimming(ax2, r"D:\PyTools\Data\20161104\BL-6A\AhRR")
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
-Cell [1;32mIn[1], line 4[0m
-[0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
-[0;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmolass[39;00m[38;5;21;01m.[39;00m[38;5;21;01mLocal[39;00m [38;5;28;01mimport[39;00m get_local_settings
-[1;32m----> 4[0m local_settings [38;5;241m=[39m [43mget_local_settings[49m[43m([49m[43m)[49m
-[0;32m      5[0m TUTORIAL_DATA [38;5;241m=[39m local_settings[[38;5;124m'[39m[38;5;124mTUTORIAL_DATA[39m[38;5;124m'[39m]
+[1;31mPermissionError[0m                           Traceback (most recent call last)
+Cell [1;32mIn[7], line 3[0m
+[0;32m      1[0m fig, (ax1,ax2) [38;5;241m=[39m plt[38;5;241m.[39msubplots(ncols[38;5;241m=[39m[38;5;241m2[39m, figsize[38;5;241m=[39m([38;5;241m10[39m,[38;5;241m4[39m))
+[0;32m      2[0m plot_flowchange_trimming(ax1, TUTORIAL_DATA)
+[1;32m----> 3[0m [43mplot_flowchange_trimming[49m[43m([49m[43max2[49m[43m,[49m[43m [49m[38;5;124;43mr[39;49m[38;5;124;43m"[39;49m[38;5;124;43mD:[39;49m[38;5;124;43m\[39;49m[38;5;124;43mPyTools[39;49m[38;5;124;43m\[39;49m[38;5;124;43mData[39;49m[38;5;124;43m\[39;49m[38;5;124;43m20161104[39;49m[38;5;124;43m\[39;49m[38;5;124;43mBL-6A[39;49m[38;5;124;43m\[39;49m[38;5;124;43mAhRR[39;49m[38;5;124;43m"[39;49m[43m)[49m
 
-File [1;32mC:\Program Files\Python312\Lib\site-packages\molass\Local\__init__.py:34[0m, in [0;36mget_local_settings[1;34m(filename, debug)[0m
-[0;32m     31[0m         [38;5;28;01mbreak[39;00m
-[0;32m     33[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m found:
-[1;32m---> 34[0m     [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([38;5;124m'[39m[38;5;124mThe local_settings.py file was not found.[39m[38;5;124m'[39m)
-[0;32m     36[0m exec([38;5;28mopen[39m(local_settings_file)[38;5;241m.[39mread())
-[0;32m     37[0m [38;5;28;01mreturn[39;00m [38;5;28mlocals[39m()[[38;5;124m'[39m[38;5;124mLocalSettings[39m[38;5;124m'[39m]
+Cell [1;32mIn[6], line 2[0m, in [0;36mplot_flowchange_trimming[1;34m(ax, in_folder)[0m
+[0;32m      1[0m [38;5;28;01mdef[39;00m [38;5;21mplot_flowchange_trimming[39m(ax, in_folder):
+[1;32m----> 2[0m     ssd [38;5;241m=[39m [43mSSD[49m[43m([49m[43min_folder[49m[43m,[49m[43m [49m[43muv_only[49m[38;5;241;43m=[39;49m[38;5;28;43;01mTrue[39;49;00m[43m)[49m
+[0;32m      3[0m     points, judge_info, (c1, c2) [38;5;241m=[39m ssd[38;5;241m.[39muv[38;5;241m.[39mget_flowchange_points(return_also_curves[38;5;241m=[39m[38;5;28;01mTrue[39;00m)
+[0;32m      4[0m     ax[38;5;241m.[39mset_title(in_folder)
 
-[1;31mFileNotFoundError[0m: The local_settings.py file was not found.
+File [1;32mC:\Program Files\Python312\Lib\site-packages\molass\DataObjects\SecSaxsData.py:78[0m, in [0;36mSecSaxsData.__init__[1;34m(self, folder, object_list, uv_only, xr_only, trimmed, remove_bubbles, beamlineinfo, mapping, debug)[0m
+[0;32m     76[0m     [38;5;28;01mfrom[39;00m [38;5;21;01mmolass[39;00m[38;5;21;01m.[39;00m[38;5;21;01mDataUtils[39;00m[38;5;21;01m.[39;00m[38;5;21;01mUvLoader[39;00m [38;5;28;01mimport[39;00m load_uv
+[0;32m     77[0m     [38;5;28;01mfrom[39;00m [38;5;21;01mmolass[39;00m[38;5;21;01m.[39;00m[38;5;21;01mDataUtils[39;00m[38;5;21;01m.[39;00m[38;5;21;01mBeamline[39;00m [38;5;28;01mimport[39;00m get_beamlineinfo_from_settings
+[1;32m---> 78[0m     uvM, wv [38;5;241m=[39m [43mload_uv[49m[43m([49m[43mfolder[49m[43m)[49m
+[0;32m     79[0m     beamlineinfo [38;5;241m=[39m get_beamlineinfo_from_settings()
+[0;32m     80[0m uvE [38;5;241m=[39m [38;5;28;01mNone[39;00m
+
+File [1;32mC:\Program Files\Python312\Lib\site-packages\molass\DataUtils\UvLoader.py:14[0m, in [0;36mload_uv[1;34m(path)[0m
+[0;32m     12[0m     uvM, wvector, conc_file [38;5;241m=[39m load_uv_array(path)
+[0;32m     13[0m [38;5;28;01melse[39;00m:
+[1;32m---> 14[0m     data [38;5;241m=[39m [43mload_uv_file[49m[43m([49m[43mpath[49m[43m)[49m
+[0;32m     15[0m     wvector [38;5;241m=[39m data[:,[38;5;241m0[39m] 
+[0;32m     16[0m     uvM [38;5;241m=[39m data[:,[38;5;241m1[39m:]    
+
+File [1;32mC:\Program Files\Python312\Lib\site-packages\molass_legacy\SerialAnalyzer\SerialDataUtils.py:130[0m, in [0;36mload_uv_file[1;34m(file, column_header, return_dict)[0m
+[0;32m    129[0m [38;5;28;01mdef[39;00m [38;5;21mload_uv_file[39m(file, column_header[38;5;241m=[39m[38;5;28;01mFalse[39;00m, return_dict[38;5;241m=[39m[38;5;28;01mFalse[39;00m):
+[1;32m--> 130[0m     fh [38;5;241m=[39m [38;5;28;43mopen[39;49m[43m([49m[43m [49m[43mfile[49m[43m,[49m[43m [49m[38;5;124;43m'[39;49m[38;5;124;43mr[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mencoding[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43mcp932[39;49m[38;5;124;43m'[39;49m[43m [49m[43m)[49m
+[0;32m    132[0m     comment_lines [38;5;241m=[39m []
+[0;32m    134[0m     [38;5;28;01mdef[39;00m [38;5;21mgenerator[39m( fh ):
+
+[1;31mPermissionError[0m: [Errno 13] Permission denied: 'D:\\PyTools\\Data\\20161104\\BL-6A\\AhRR'
 
