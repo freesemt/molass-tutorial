@@ -58,10 +58,11 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/01/data_objects';</script>
+    <link rel="icon" href="../../_static/molamola.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Data Trimming" href="../02/data_trimming.html" />
-    <link rel="prev" title="1.5. Local Settings Check" href="../00/settings_check.html" />
+    <link rel="prev" title="1. Preparation" href="../00/prepare.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,10 +181,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../00/prepare.html">1. Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../00/settings_check.html">1.5. Local Settings Check</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../00/prepare.html">1. Preparation</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
@@ -393,7 +391,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sec-sax-data">2.2. SEC-SAX Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elution-curves">2.3. Elution Curves</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peak-positions">2.4. Peak Positions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absorbance-curves-and-scattering-curves">2.5. Absorbance Curves and Scattering Curves</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-curves">2.5. Spectral Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absorbance-curves">2.5.1. Absorbance Curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-curves">2.5.2. Scattering Curves</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.6. References</a></li>
 </ul>
             </nav>
@@ -519,8 +521,14 @@ document.write(`
 <li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/color/color_cycle_default.html">Colors in the default property cycle</a></p></li>
 </ul>
 </section>
-<section id="absorbance-curves-and-scattering-curves">
-<h2><span class="section-number">2.5. </span>Absorbance Curves and Scattering Curves<a class="headerlink" href="#absorbance-curves-and-scattering-curves" title="Link to this heading">#</a></h2>
+<section id="spectral-curves">
+<h2><span class="section-number">2.5. </span>Spectral Curves<a class="headerlink" href="#spectral-curves" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here, we use “spectral” to mean either of the following two types of curves, for lack of a better word.</p>
+</div>
+<section id="absorbance-curves">
+<h3><span class="section-number">2.5.1. </span>Absorbance Curves<a class="headerlink" href="#absorbance-curves" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">uv_peaks</span><span class="p">:</span>
@@ -533,6 +541,9 @@ document.write(`
 <img alt="../../_images/52921ccf97a68909e4929e1e05ccb4f897da57ff50bed6221882d031a0ed7055.png" src="../../_images/52921ccf97a68909e4929e1e05ccb4f897da57ff50bed6221882d031a0ed7055.png" />
 </div>
 </div>
+</section>
+<section id="scattering-curves">
+<h3><span class="section-number">2.5.2. </span>Scattering Curves<a class="headerlink" href="#scattering-curves" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">xr_peaks</span><span class="p">:</span>
@@ -562,6 +573,7 @@ document.write(`
 <img alt="../../_images/34e22d7b8024e1075d876ec069033c222d009048c728642cac668bdaedc9d52e.png" src="../../_images/34e22d7b8024e1075d876ec069033c222d009048c728642cac668bdaedc9d52e.png" />
 </div>
 </div>
+</section>
 </section>
 <section id="references">
 <h2><span class="section-number">2.6. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
@@ -603,12 +615,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../00/settings_check.html"
+       href="../00/prepare.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.5. </span>Local Settings Check</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Preparation</p>
       </div>
     </a>
     <a class="right-next"
@@ -640,7 +652,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sec-sax-data">2.2. SEC-SAX Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elution-curves">2.3. Elution Curves</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peak-positions">2.4. Peak Positions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absorbance-curves-and-scattering-curves">2.5. Absorbance Curves and Scattering Curves</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-curves">2.5. Spectral Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absorbance-curves">2.5.1. Absorbance Curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-curves">2.5.2. Scattering Curves</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.6. References</a></li>
 </ul>
   </nav></div>

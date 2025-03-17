@@ -58,9 +58,10 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/00/prepare';</script>
+    <link rel="icon" href="../../_static/molamola.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.5. Local Settings Check" href="settings_check.html" />
+    <link rel="next" title="2. Data Objects" href="../01/data_objects.html" />
     <link rel="prev" title="Molass Library Tutorial" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,10 +181,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Preparation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="settings_check.html">1.5. Local Settings Check</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01/data_objects.html">2. Data Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
@@ -295,7 +293,7 @@
       
       
       
-      <li><a href="../../_sources/chapters/00/prepare.md" target="_blank"
+      <li><a href="../../_sources/chapters/00/prepare.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +303,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -393,6 +391,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings">1.4. Local Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings-check">1.5. Local Settings Check</a></li>
 </ul>
             </nav>
         </div>
@@ -415,19 +414,18 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 <p>Do not confuse “Jupyter Notebook” and “Jupyter Book”. The former is a file for programming, while the latter is a tool for publishing.</p>
 </div>
 <p>To install the Molass Library package, you can use pip as follows.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">molass</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">molass_legacy</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -U molass</span>
+<span class="go">pip install -U molass_legacy</span>
 </pre></div>
 </div>
-<p><font color="orange">WARNING: These command lines will be available in April, 2025.</font></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The molass package currently depends on molass_legacy. This dependency is planned to be removed soon.</p>
+<p>The molass package currently depends on molass_legacy. This dependency is planned to be removed.</p>
 </div>
 </section>
 <section id="tools-for-jupyter-notebooks">
 <h2><span class="section-number">1.2. </span>Tools for Jupyter Notebooks<a class="headerlink" href="#tools-for-jupyter-notebooks" title="Link to this heading">#</a></h2>
-<p>As a tool for programming in Jupyter Notebooks, we recommend either of the following without excluding other alternatives.</p>
+<p>As tools for programming in Jupyter Notebooks, we recommend either of the following without excluding other alternatives.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jupyter.org/">Jupyter Lab</a></p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Jupyter Extension in VS Code</a></p></li>
@@ -435,12 +433,16 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 </section>
 <section id="download-data-for-this-tutorial">
 <span id="id1"></span><h2><span class="section-number">1.3. </span>Download Data for this Tutorial<a class="headerlink" href="#download-data-for-this-tutorial" title="Link to this heading">#</a></h2>
-<p>To run and follow the tutorial, download data from the following links.</p>
+<p>To run and follow this tutorial, download data from the following links.</p>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="../../_downloads/6781b482c5a653baea141251854ee598/tutorial_data.zip"><span class="xref download myst">tutorial_data.zip</span></a></p></li>
 <li><p><a class="reference download internal" download="" href="../../_downloads/2d33d46e1518ded14ce1962f4a3dd2b5/simulated_data.zip"><span class="xref download myst">simulated_data.zip</span></a>  (in preparation, currently empty)</p></li>
 </ul>
-<p>You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models. See <a class="reference internal" href="../80/about_data_sets.html#about-example-data-sets"><span class="std std-ref">About Example Data Sets</span></a> if you are interested in how they are built.</p>
+<p>You can use one or both of these. They are similar, but not the same. The former is from a real experiment on a few standard proteins, while the latter has been generated using simple, but not realistic, models.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See <a class="reference internal" href="../80/about_data_sets.html#about-example-data-sets"><span class="std std-ref">About Example Data Sets</span></a> if you are interested in how they are built.</p>
+</div>
 </section>
 <section id="local-settings">
 <h2><span class="section-number">1.4. </span>Local Settings<a class="headerlink" href="#local-settings" title="Link to this heading">#</a></h2>
@@ -464,8 +466,32 @@ relevant packages, e.g., numpy, matplotlib, jupyterlab, etc.</p>
 <p>The get_local_settings() function introduced in the next section will search for this script walking upward several levels from the current folder until it finds the filename and import the settings dict you have specified.
 You can check your local settings in the next section.</p>
 </section>
-<div class="toctree-wrapper compound">
+<section id="local-settings-check">
+<h2><span class="section-number">1.5. </span>Local Settings Check<a class="headerlink" href="#local-settings-check" title="Link to this heading">#</a></h2>
+<p>To check your local settings, download this book by the button at the upper right corner and run it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
+<span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">TUTORIAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;TUTORIAL_DATA&#39;</span><span class="p">]</span>
+<span class="n">SIMULATED_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;SIMULATED_DATA&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">TUTORIAL_DATA</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">SIMULATED_DATA</span><span class="p">)</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0] D:\Github\molass-tutorial\chapters\local_settings.py does not exist
+[1] D:\Github\molass-tutorial\local_settings.py does not exist
+[2] D:\Github\local_settings.py found
+D:\MolassData\tutorial_data
+D:\MolassData\simulated_data
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the folder locations are printed as expected, you are ready to continue.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -508,11 +534,11 @@ You can check your local settings in the next section.</p>
       </div>
     </a>
     <a class="right-next"
-       href="settings_check.html"
+       href="../01/data_objects.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.5. </span>Local Settings Check</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Data Objects</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -536,6 +562,7 @@ You can check your local settings in the next section.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-jupyter-notebooks">1.2. Tools for Jupyter Notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-for-this-tutorial">1.3. Download Data for this Tutorial</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings">1.4. Local Settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-settings-check">1.5. Local Settings Check</a></li>
 </ul>
   </nav></div>
 
