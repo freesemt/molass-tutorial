@@ -4,13 +4,10 @@
 format: jb-book
 root: chapters/intro
 options:
-  numbered: true
+  numbered: 3
 chapters:
 - file: chapters/00/prepare
   title: Preparation
-  sections:
-  - file: chapters/00/settings_check
-    title: Local Settings Check
 - file: chapters/01/data_objects
   title: Data Objects
 - file: chapters/02/data_trimming
