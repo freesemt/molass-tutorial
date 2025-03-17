@@ -10,7 +10,7 @@ This tutorial gets you started with how to use the Molass Library. Follow the ch
 
 See also as you proceed:
 
-* [Molass Library Theory](https://freesemt.github.io/molass-theory/)
+* [Molass Library Essense](https://freesemt.github.io/molass-essense/)
 * [Molass Library Reference](https://freesemt.github.io/molass-library/)
 * [Molass Library Repository](https://github.com/freesemt/molass-library)
 
