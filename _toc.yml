@@ -23,5 +23,10 @@ chapters:
     title: Trimming
   - file: chapters/80/generation
     title: Generation
-- file: chapters/81/about_pre_release
-  title: About Pre-release Package
+- file: chapters/81/animation
+  title: Animation
+  sections:
+  - file: chapters/81/simple_animation
+    title: Simple Animation
+  - file: chapters/81/sec_simulation
+    title: SEC Simulation
