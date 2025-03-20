@@ -18,4 +18,3 @@ See also as you proceed:
 You can switch between dark and light modes using the toggle button at the upper right corner of any page.
 ```
 
-This book is powered by [Jupyter Book](https://jupyterbook.org).
