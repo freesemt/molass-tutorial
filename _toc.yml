@@ -16,6 +16,10 @@ chapters:
   title: Baselines
 - file: chapters/04/data_correction
   title: Data Correction
+- file: chapters/05/mapping
+  title: Mapping between UV and X-ray
+- file: chapters/06/lrf
+  title: Low Rank Factorization
 - file: chapters/80/about_data_sets
   title: About Example Data Sets
   sections:
