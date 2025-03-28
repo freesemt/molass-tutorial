@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/molamola.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6. About Example Data Sets" href="../80/about_data_sets.html" />
+    <link rel="next" title="6. Mapping between UV and X-ray" href="../05/mapping.html" />
     <link rel="prev" title="4. Baselines" href="../03/baselines.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -186,9 +186,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Data Correction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../80/about_data_sets.html">6. About Example Data Sets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Trimming</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/mapping.html">6. Mapping between UV and X-ray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/lrf.html">7. Low Rank Factorization</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../80/about_data_sets.html">8. About Example Data Sets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">8.1. Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">8.2. Generation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../81/animation.html">9. Animation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../81/simple_animation.html">9.1. Simple Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../81/sec_simulation.html">9.2. SEC Simulation</a></li>
 </ul>
 </details></li>
 </ul>
@@ -412,7 +419,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E:\MolassData\tutorial_data
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>D:\MolassData\tutorial_data
 </pre></div>
 </div>
 </div>
@@ -460,7 +467,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x1debe430b30&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x1f016cf4fe0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/3a3760479bffeee22c4fcfb8c02c5875692bb9878ab7d1accdf2ea4b902975ed.png" src="../../_images/3a3760479bffeee22c4fcfb8c02c5875692bb9878ab7d1accdf2ea4b902975ed.png" />
@@ -509,11 +516,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../80/about_data_sets.html"
+       href="../05/mapping.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>About Example Data Sets</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Mapping between UV and X-ray</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

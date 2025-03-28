@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7.1. Simple Animation &#8212; Molass Library Tutorial</title>
+    <title>9.1. Simple Animation &#8212; Molass Library Tutorial</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,8 +61,8 @@
     <link rel="icon" href="../../_static/molamola.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="7.2. SEC Simulation" href="sec_simulation.html" />
-    <link rel="prev" title="7. Animation" href="animation.html" />
+    <link rel="next" title="9.2. SEC Simulation" href="sec_simulation.html" />
+    <link rel="prev" title="9. Animation" href="animation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -186,14 +186,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/data_trimming.html">3. Data Trimming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03/baselines.html">4. Baselines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/data_correction.html">5. Data Correction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../80/about_data_sets.html">6. About Example Data Sets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">6.1. Trimming</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">6.2. Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/mapping.html">6. Mapping between UV and X-ray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/lrf.html">7. Low Rank Factorization</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../80/about_data_sets.html">8. About Example Data Sets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../80/trimming.html">8.1. Trimming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../80/generation.html">8.2. Generation</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="animation.html">7. Animation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">7.1. Simple Animation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sec_simulation.html">7.2. SEC Simulation</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="animation.html">9. Animation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">9.1. Simple Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sec_simulation.html">9.2. SEC Simulation</a></li>
 </ul>
 </details></li>
 </ul>
@@ -394,7 +396,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="simple-animation">
-<h1><span class="section-number">7.1. </span>Simple Animation<a class="headerlink" href="#simple-animation" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">9.1. </span>Simple Animation<a class="headerlink" href="#simple-animation" title="Link to this heading">#</a></h1>
 <p>Here is a simple animation borrowed at:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://stackoverflow.com/questions/43445103/inline-animations-in-jupyter">Inline animations in Jupyter</a></p></li>
@@ -610,42 +612,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_imgda03624fe95145ccb78d821097951499">
+  <img id="_anim_imga65ded7233aa4031895f7c9917469041">
   <div class="anim-controls">
-    <input id="_anim_sliderda03624fe95145ccb78d821097951499" type="range" class="anim-slider"
+    <input id="_anim_slidera65ded7233aa4031895f7c9917469041" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="animda03624fe95145ccb78d821097951499.set_frame(parseInt(this.value));">
+           oninput="anima65ded7233aa4031895f7c9917469041.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="animda03624fe95145ccb78d821097951499.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anima65ded7233aa4031895f7c9917469041.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="animda03624fe95145ccb78d821097951499.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anima65ded7233aa4031895f7c9917469041.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="animda03624fe95145ccb78d821097951499.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anima65ded7233aa4031895f7c9917469041.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="animda03624fe95145ccb78d821097951499.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anima65ded7233aa4031895f7c9917469041.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="animda03624fe95145ccb78d821097951499.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anima65ded7233aa4031895f7c9917469041.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="animda03624fe95145ccb78d821097951499.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anima65ded7233aa4031895f7c9917469041.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="animda03624fe95145ccb78d821097951499.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anima65ded7233aa4031895f7c9917469041.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="animda03624fe95145ccb78d821097951499.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anima65ded7233aa4031895f7c9917469041.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="animda03624fe95145ccb78d821097951499.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anima65ded7233aa4031895f7c9917469041.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selectda03624fe95145ccb78d821097951499"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selecta65ded7233aa4031895f7c9917469041"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_da03624fe95145ccb78d821097951499"
+      <input type="radio" name="state" value="once" id="_anim_radio1_a65ded7233aa4031895f7c9917469041"
              >
-      <label for="_anim_radio1_da03624fe95145ccb78d821097951499">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_da03624fe95145ccb78d821097951499"
+      <label for="_anim_radio1_a65ded7233aa4031895f7c9917469041">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_a65ded7233aa4031895f7c9917469041"
              checked>
-      <label for="_anim_radio2_da03624fe95145ccb78d821097951499">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_da03624fe95145ccb78d821097951499"
+      <label for="_anim_radio2_a65ded7233aa4031895f7c9917469041">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_a65ded7233aa4031895f7c9917469041"
              >
-      <label for="_anim_radio3_da03624fe95145ccb78d821097951499">Reflect</label>
+      <label for="_anim_radio3_a65ded7233aa4031895f7c9917469041">Reflect</label>
     </form>
   </div>
 </div>
@@ -655,9 +657,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_imgda03624fe95145ccb78d821097951499";
-    var slider_id = "_anim_sliderda03624fe95145ccb78d821097951499";
-    var loop_select_id = "_anim_loop_selectda03624fe95145ccb78d821097951499";
+    var img_id = "_anim_imga65ded7233aa4031895f7c9917469041";
+    var slider_id = "_anim_slidera65ded7233aa4031895f7c9917469041";
+    var loop_select_id = "_anim_loop_selecta65ded7233aa4031895f7c9917469041";
     var frames = new Array(50);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -16336,7 +16338,7 @@ iIjIwbAAEhERETmY/wfXn26z/xOHwwAAAABJRU5ErkJggg==\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        animda03624fe95145ccb78d821097951499 = new Animation(frames, img_id, slider_id, 200.0,
+        anima65ded7233aa4031895f7c9917469041 = new Animation(frames, img_id, slider_id, 200.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -16381,7 +16383,7 @@ iIjIwbAAEhERETmY/wfXn26z/xOHwwAAAABJRU5ErkJggg==\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Animation</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Animation</p>
       </div>
     </a>
     <a class="right-next"
@@ -16389,7 +16391,7 @@ iIjIwbAAEhERETmY/wfXn26z/xOHwwAAAABJRU5ErkJggg==\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7.2. </span>SEC Simulation</p>
+        <p class="prev-next-title"><span class="section-number">9.2. </span>SEC Simulation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
