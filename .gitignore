@@ -1,4 +1,4 @@
-# Ignore build artifacts
+# Ignore the generated files and folders
 _build/
 
 # Ignore the evironment file which defines PYTHONPATH
@@ -6,3 +6,6 @@ _build/
 
 # Ignore the local settings for each user
 local_settings.py
+
+# Ignore the animation file 
+*.gif
