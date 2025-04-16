@@ -252,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/freesemt/molass-tutorial" target="_blank"
+      <li><a href="https://github.com/nshimizu0721/molass-tutorial" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -269,7 +269,7 @@
       
       
       
-      <li><a href="https://github.com/freesemt/molass-tutorial/issues/new?title=Issue%20on%20page%20%2Fchapters/04/data_correction.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/nshimizu0721/molass-tutorial/issues/new?title=Issue%20on%20page%20%2Fchapters/04/data_correction.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -407,8 +407,8 @@ document.write(`
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;E:\GitHub\molass-library&#39;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">molass.Local</span> <span class="kn">import</span> <span class="n">get_local_settings</span>
 <span class="n">local_settings</span> <span class="o">=</span> <span class="n">get_local_settings</span><span class="p">()</span>
 <span class="n">TUTORIAL_DATA</span> <span class="o">=</span> <span class="n">local_settings</span><span class="p">[</span><span class="s1">&#39;TUTORIAL_DATA&#39;</span><span class="p">]</span>
@@ -462,15 +462,19 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trimmed_ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span> <span class="o">=</span> <span class="n">trimmed_ssd</span><span class="o">.</span><span class="n">plot_3d</span><span class="p">(</span><span class="n">view_init</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">elev</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">azim</span><span class="o">=-</span><span class="mi">30</span><span class="p">),</span> <span class="n">view_arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;molass.PlotUtils.PlotResult.PlotResult at 0x1f016cf4fe0&gt;
+<img alt="../../_images/67943e97d56f53af0a970933c1e16b8840be036044feb5798360a45c7a3930db.png" src="../../_images/67943e97d56f53af0a970933c1e16b8840be036044feb5798360a45c7a3930db.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot.fig.savefig(&#39;corrected_ssd_3d.png&#39;)</span>
 </pre></div>
 </div>
-<img alt="../../_images/3a3760479bffeee22c4fcfb8c02c5875692bb9878ab7d1accdf2ea4b902975ed.png" src="../../_images/3a3760479bffeee22c4fcfb8c02c5875692bb9878ab7d1accdf2ea4b902975ed.png" />
 </div>
 </div>
 </section>
