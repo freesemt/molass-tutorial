@@ -10,9 +10,9 @@ This tutorial gets you started with how to use the Molass Library. Follow the ch
 
 See also as you proceed:
 
-* [Molass Library Essence](https://freesemt.github.io/molass-essence/) for theory,
-* [Molass Library Reference](https://freesemt.github.io/molass-library/) for function reference,
-* [Molass Library Repository](https://github.com/freesemt/molass-library) for source code.
+* [Molass Library Essence](https://nshimizu0721.github.io/molass-essence/) for theory,
+* [Molass Library Reference](https://nshimizu0721.github.io/molass-library/) for function reference,
+* [Molass Library Repository](https://github.com/nshimizu0721/molass-library) for source code.
 
 ```{tip}
 You can switch between dark and light modes using the toggle button at the upper right corner of any page.
